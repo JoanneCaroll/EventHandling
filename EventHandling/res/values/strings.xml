@@ -5,4 +5,5 @@
     <string name="hello_world">Hello world!</string>
     <string name="show">Show Hello World TextView.</string>
 	<string name="showToast">Show Hello World Toast</string>
+	<string name="action_settings">Menu</string>
 </resources>
