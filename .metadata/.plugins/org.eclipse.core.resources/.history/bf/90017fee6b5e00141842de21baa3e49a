@@ -1,0 +1,42 @@
+package com.example.eventhandling;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+
+
+public class MainActivity extends Activity {
+	TextView label;
+	Button showButton;
+	int i=0;
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        label = (TextView)findViewById(R.id.hello_world);
+		label.setVisibility(View.VISIBLE);
+        showButton = (Button)findViewById(R.id.showText);
+        showButton.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				if (i==0)
+				{
+					label.setVisibility(View.VISIBLE);
+					i=1;
+				}
+				else if(i==1)
+				{
+					label.setVisibility(View.GONE);
+					i=0;
+				}
+			}
+		});
+        	
+        }
+        
+
+}
