@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" 
     android:orientation="vertical"
-    android:layout_gravity="center"
+    android:gravity="center"
     android:padding="30dp">
 
 
@@ -22,7 +22,8 @@
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:text="@string/show"
-           android:textSize="15dp" />
+           android:textSize="15dp"
+           android:padding="30dp" />
        
        <Button
            	android:layout_gravity="center"
@@ -30,6 +31,18 @@
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:text="@string/showToast"
-	        android:textSize="15dp"/>
+	        android:textSize="15dp"
+	        android:padding="30dp"/>
+       
+        <Button 
+            android:layout_gravity="center"
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next"
+            android:textStyle="italic|bold"
+            android:textSize ="20dp"
+            android:textColor="#ff0000"
+            />
 
 </LinearLayout>
